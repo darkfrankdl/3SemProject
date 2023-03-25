@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Client.Models.PersonClient>
+
+
+@{
+    ViewData["Title"] = "Profiles";
+}
+
+<h1>Profiles</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Points)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usertype)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Points)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usertype)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { item.Username }) |
+           @*     @Html.ActionLink("Details", "Details", new { item.username }) |*@
+                @Html.ActionLink("Delete", "Delete", new { item.Username })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

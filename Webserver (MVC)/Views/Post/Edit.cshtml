@@ -1,0 +1,59 @@
+﻿@model Client.Models.PostClient
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Post</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Text" class="control-label"></label>
+                <input asp-for="Text" class="form-control" />
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="TimeOfPost" class="control-label"></label>
+                <input asp-for="TimeOfPost" class="form-control" value="@TempData["PostTime"]" />
+                <span asp-validation-for="TimeOfPost" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="TopicCategoryName" class="control-label"></label>
+                <input asp-for="TopicCategoryName" class="form-control" />
+                <span asp-validation-for="TopicCategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="visibility:hidden">
+                <label asp-for="Points" class="control-label"></label>
+                <input asp-for="Points" class="form-control" />
+                <span asp-validation-for="Points" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Posts">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

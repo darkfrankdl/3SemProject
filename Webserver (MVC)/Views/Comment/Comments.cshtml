@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Client.Models.CommentClient>
+
+@{
+    ViewData["Title"] = "Comments";
+}
+
+<h1>Comments</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostUsername)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostUsername)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "Edit", new { item.PostDateTime, item.PostUsername, item.DateTime}) |
+                @Html.ActionLink("Delete", "Delete", new { item.DateTime , item.Username,item.PostUsername })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
