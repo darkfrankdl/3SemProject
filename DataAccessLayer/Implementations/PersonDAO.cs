@@ -50,7 +50,6 @@ namespace DataAccessLayer.Implementations
 
         public bool InsertPerson(Person person)
         {
-            // TODO: Implement call to database that inserts the entity into the customers table
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
@@ -69,12 +68,10 @@ namespace DataAccessLayer.Implementations
 
         public bool UpdatePerson(Person person)
         {
-            // TODO: Implement call to database that updates the entity in the customers table
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = "UPDATE Person SET " +
-                //"Username = @Username, " +
                 "User_password = @User_password, " +
                 "Points = @Points," +
                 "FK_Usertype_Usertype = @Usertype " +
@@ -92,9 +89,7 @@ namespace DataAccessLayer.Implementations
 
         public bool UpdatePersonWithPoints(Person person, SqlConnection conn, SqlTransaction transaction)
         {
-            // TODO: Implement call to database that updates the entity in the customers table
-            //SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
-            //conn.Open();
+
             SqlCommand cmd = conn.CreateCommand();
             cmd.Transaction = transaction;
             cmd.CommandText = "UPDATE Person SET " +
@@ -109,7 +104,7 @@ namespace DataAccessLayer.Implementations
 
         public bool Delete(Person person)
         {
-            // TODO: Implement call to database that deletes the entity from the customers table
+
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
@@ -157,9 +152,6 @@ namespace DataAccessLayer.Implementations
 
         public Person GetPersonWithTransaction(String? username, SqlTransaction transaction, SqlConnection conn)
         {
-            // 1. Create and open a connection to the database
-            //SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
-            //conn.Open();
 
             // 2. Creates a sql command that will be executed on the database
             SqlCommand cmd = conn.CreateCommand();
@@ -182,8 +174,6 @@ namespace DataAccessLayer.Implementations
 
             }
             reader.Close();
-            // 5. Clean up
-            //conn.Close();
 
             return person;
         }

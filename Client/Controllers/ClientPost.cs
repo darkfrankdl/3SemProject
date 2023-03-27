@@ -49,11 +49,6 @@ namespace Client.Controllers
             //with the Post as a JSON object in body
             //and returns the primary of the inserted post
             var request = new RestRequest($"{post.TimeOfPost}/{post.Username}", Method.Post);
-            //request.AddQueryParameter("DateTimePost",post.TimeOfPost);
-            //request.AddQueryParameter("Username", post.Username);
-            //request.AddQueryParameter("Text", post.Text);
-            //request.AddQueryParameter("Title", post.Title);
-            //request.AddQueryParameter("Points", post.Points.ToString());
             request.AddBody(post);
             _client.Post(request);
         }
@@ -64,12 +59,6 @@ namespace Client.Controllers
             //with the Post as a JSON object in body
             //and returns whether the post was found on the server
             var request = new RestRequest($"{post.TimeOfPost}/{post.Username}", Method.Put);
-            //request.AddQueryParameter("DateTimePost", post.TimeOfPost);
-            //request.AddQueryParameter("Username", post.Username);
-            //request.AddQueryParameter("Text", post.Text);
-            //request.AddQueryParameter("Title", post.Title);
-            //request.AddQueryParameter("Points", post.Points.ToString());
-            //request.AddQueryParameter("CategoryName", post.TopicCategoryName);
             request.AddBody(post);
             _client.Put(request);
         }

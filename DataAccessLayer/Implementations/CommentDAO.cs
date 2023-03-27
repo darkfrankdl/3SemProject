@@ -28,8 +28,6 @@ namespace DataAccessLayer.Implementations
          
         private bool UpdatePersonAndPostWithPoints(Person person, Post post, SqlConnection conn, SqlTransaction transaction)
         {
-            //SqlConnection conn = new(_conn.DBConnectionString.ConnectionString);
-            //conn.Open();
 
             PostDAO postDAO = new PostDAO();
             bool test2 = postDAO.UpdatePostWithPoints(post, conn, transaction);
@@ -43,8 +41,6 @@ namespace DataAccessLayer.Implementations
             {
                 succes = true;
             }
-
-            //conn.Close();
 
             return succes;
         }

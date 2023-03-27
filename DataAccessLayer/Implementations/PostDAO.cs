@@ -95,10 +95,6 @@ namespace DataAccessLayer.Implementations
         public Post GetPostWithTransaction(string? postUsername, DateTime? postDateTime, SqlTransaction transaction, SqlConnection conn)
         {
 
-            //SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
-            //conn.Open();
-
-
             SqlCommand cmd = conn.CreateCommand();
             cmd.Transaction = transaction;
             cmd.CommandText = "SELECT * FROM Post Where FK_Person_username = @Username And " +
@@ -128,7 +124,6 @@ namespace DataAccessLayer.Implementations
 
         public bool Insert(Post post)
         {
-            // TODO: Implements call to database that inserts the entity into the Post table
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
@@ -150,7 +145,6 @@ namespace DataAccessLayer.Implementations
 
         public bool Update(Post post)
         {
-            // TODO: Implements call to database that updates the entity in the Post table
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
@@ -164,7 +158,7 @@ namespace DataAccessLayer.Implementations
             cmd.Parameters.AddWithValue("Text", post.Text);
             cmd.Parameters.AddWithValue("TopicCategoryName", post.TopicCategoryName);
             cmd.Parameters.AddWithValue("Point", post.Points);
-            //cmd.Parameters.AddWithValue("Title", post.title);
+
 
             int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -177,7 +171,7 @@ namespace DataAccessLayer.Implementations
         {
             int rowsAffected = 0;
 
-                //SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
+
                 SqlCommand cmd = conn.CreateCommand();
                 cmd.Transaction = transaction;
                 cmd.CommandText = "UPDATE Post SET " +
@@ -193,7 +187,6 @@ namespace DataAccessLayer.Implementations
 
         public bool Delete(Post post)
         {
-            // TODO: Implements call to database that deletes the entity from the Post table
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();

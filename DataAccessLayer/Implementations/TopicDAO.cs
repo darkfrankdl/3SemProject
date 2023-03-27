@@ -53,7 +53,6 @@ namespace DataAccessLayer.Implementations
             return list;
         }
 
-        //Should maybe be removed because the method is unused or outcommented
         public Topic Get(Topic topic)
         {
             SqlConnection sqlConnection = new(_dbConnection.DBConnectionString.ConnectionString);
@@ -86,34 +85,11 @@ namespace DataAccessLayer.Implementations
 
             return topicRead;
         }
-        /* Tror ikke vi har brug for den her function
-        public Topic? GetById(int id)
-        {
-            // TODO: Implement call to database for returning a specific row from the Customers table with the given id
-            SqlConnection conn = new(_connectionStringBuilder.ConnectionString);
-            conn.Open();
-            SqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM Topic WHERE Categoryname = @categoryName";
-            cmd.Parameters.AddWithValue("Categoryname", categoryName);
-            SqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.Read())
-            {
-                Topic topic = new()
-                {
-                    categoryName = reader.GetString(0),
-                    userName = reader.GetString(1)
-                };
-                return topic;
-            }
-            return null;
-        } 
-        */
 
 
         public bool Insert(Topic topic)
         {
-            // TODO: Implement call to database that inserts the entity into the Topic table
+
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
@@ -128,7 +104,8 @@ namespace DataAccessLayer.Implementations
 
         public bool Update(Topic topic)
         {
-            // TODO: Implement call to database that updates the entity in the Topic table
+
+
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();
@@ -146,7 +123,7 @@ namespace DataAccessLayer.Implementations
         
         public bool Delete(Topic topic)
         {
-            // TODO: Implement call to database that deletes the entity from the Topic table
+
             SqlConnection conn = new(_dbConnection.DBConnectionString.ConnectionString);
             conn.Open();
             SqlCommand cmd = conn.CreateCommand();

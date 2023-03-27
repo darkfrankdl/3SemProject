@@ -1,0 +1,12 @@
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\PersonalGit\Workspaces\CSharpWorkspace\GP5-semester-3-projekt-forum-main\Forum Projekt\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

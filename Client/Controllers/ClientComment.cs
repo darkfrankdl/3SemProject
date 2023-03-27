@@ -35,14 +35,6 @@ namespace Client.Controllers
             return _client.Get<IEnumerable<CommentClient>>(request);
         }
 
-        //public IEnumerable<CustomerDto>? SearchCustomers(string partOfName, string? partOfEmail = null)
-        //{
-        //    var request = new RestRequest("search")
-        //       .AddQueryParameter("partOfName", partOfName)
-        //       .AddQueryParameter("partOfEmail", partOfEmail ?? "");
-        //    return _client.Get<IEnumerable<CustomerDto>>(request);
-        //}
-
         public void InsertComment(CommentClient comment)
         {
             //sends a POST request to "api/apicomments"

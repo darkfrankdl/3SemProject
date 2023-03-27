@@ -23,39 +23,13 @@ namespace DataAccessLayer.DBConnectionNameSpace
         private DBConnection()
         {
             _connectionStringBuilder = new();
-            _connectionStringBuilder.DataSource = "hildur.ucn.dk";
-            _connectionStringBuilder.InitialCatalog = "DMA-CSD-S212_1089449";
-            _connectionStringBuilder.UserID = "DMA-CSD-S212_1089449";
-            _connectionStringBuilder.Password = "Password1!";
+            _connectionStringBuilder.DataSource = "localhost\\sqlexpress";
+            _connectionStringBuilder.InitialCatalog = "projekt";
+            _connectionStringBuilder.UserID = "";
+            _connectionStringBuilder.Password = "";
             _connectionStringBuilder.Encrypt = false;
-            _connectionStringBuilder.IntegratedSecurity = false;
+            _connectionStringBuilder.IntegratedSecurity = true;
         }
-
-        /*public sealed class Singleton
-        {
-            private static readonly Lazy<Singleton> lazy =
-                new Lazy<Singleton>(() => new Singleton());
-
-            public static Singleton Instance { get { return lazy.Value; } }
-
-            private Singleton()
-            {
-            }
-        }
-        */
-
-
-        //private DBConn()
-        //{
-        //}
-        //private static readonly Lazy<DBConn> lazy = new Lazy<DBConn>(() => new DBConn());
-        //public static Singleton5 Instance
-        //{
-        //    get
-        //    {
-        //        return lazy.Value;
-        //    }
-        //}
 
 
         public static DBConnection GetInstance()
