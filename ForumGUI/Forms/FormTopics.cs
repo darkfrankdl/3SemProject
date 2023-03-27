@@ -99,11 +99,11 @@ namespace ForumGUI.Forms
         private void deleteTopic()
         {
             TopicClient topicToBeDeleted = (TopicClient)listBoxTopics.SelectedItem;
-           // topicToBeDeleted.CategoryName = topicToBeDeleted.CategoryName;
+
            _restClient.DeleteTopic(topicToBeDeleted);
 
             listBoxTopics.Items.Clear();
-            //getTopicList();
+
 
         }
 

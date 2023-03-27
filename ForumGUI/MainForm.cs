@@ -17,11 +17,6 @@ namespace ForumGUI
 
         private void listPostsHome(object sender, EventArgs e)
         {
-           // listBoxOfPostHome.SelectedIndex = 0;
-
-           // listBoxOfPostHome.SelectedItem = null;
-
-           // listBoxOfPostHome.Items.Clear();
 
             List<PostClient> listPost = _client.AllPosts().ToList();
 

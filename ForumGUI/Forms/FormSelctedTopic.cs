@@ -90,8 +90,7 @@ namespace ForumGUI.Forms
 
         private void btnCreatePost_Click(object sender, EventArgs e)
         {
-            // textBoxTopicSelected -> topic category name 
-            // time of creation 
+
             string categoryName = textBoxTopicSelected.Text;
             FormCreatePost fCreateP = new(categoryName);
             fCreateP.Show();

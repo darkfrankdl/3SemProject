@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Forms\FormCreateComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormCreatePost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormCreateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormCreateTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormEditComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormEditPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormEditTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormPosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormSelctedTopic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormSelectedPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTopics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

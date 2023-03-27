@@ -47,7 +47,6 @@ namespace ForumGUI.Forms
         private void textBoxPoints_TextChanged(object sender, EventArgs e)
         {
             PersonClient p = new PersonClient();
-           // p.Points = textBoxPoints.Text;
         }
 
         private void textBoxUsertype_TextChanged(object sender, EventArgs e)

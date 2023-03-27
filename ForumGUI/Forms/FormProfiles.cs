@@ -25,7 +25,6 @@ namespace ForumGUI.Forms
         {
             if (listBoxProfiles.SelectedIndex >= 0)
             {
-                // getSelectedItem(listBoxProfiles.SelectedItem);
             }
             else
             {
@@ -41,8 +40,6 @@ namespace ForumGUI.Forms
 
         private void getSelectedItem(object selectedItem)
         {
-            //FormSelctedTopic formSelctedT = new((TopicClient)selectedItem);
-           // formSelctedT.Show();
 
 
             listBoxProfiles.SelectedItem = 0;
@@ -76,11 +73,9 @@ namespace ForumGUI.Forms
         private void deleteProfile()
         {
             PersonClient profileToBeDeleted = (PersonClient)listBoxProfiles.SelectedItem;
-            // topicToBeDeleted.CategoryName = topicToBeDeleted.CategoryName;
             _client.DeleteProfile(profileToBeDeleted);
 
             listBoxProfiles.Items.Clear();
-            //getTopicList();
 
         }
 

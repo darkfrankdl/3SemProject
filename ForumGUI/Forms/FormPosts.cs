@@ -50,10 +50,6 @@ namespace ForumGUI.Forms
         {
             if (listBoxPosts.SelectedIndex >= 0)
             {
-                //Todo - Implement forSelectPost.Show()
-
-                //FormSelectedPost formSelectPost = new();
-                //formSelectPost.Show();  
             }
             else
             {
@@ -75,8 +71,7 @@ namespace ForumGUI.Forms
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            //FormCreatePost fCreateP = new();
-            //fCreateP.Show();
+
         }
     }
 }

@@ -27,7 +27,6 @@ namespace ForumGUI.Forms
         private void OkClicked()
         {
             String password = txtBoxPassword.Text;
-            //txtBoxPassword.Text = profile.Password; 
             profile.Password = password;
             if(profile != null)
             {

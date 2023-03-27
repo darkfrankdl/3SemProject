@@ -47,10 +47,6 @@ namespace ForumGUI.Forms
         private void btnCreatePost_Click(object sender, EventArgs e)
         {
 
-            /*
-            string x = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            postForCreate.TimeOfPost = DateTime.Parse(x);
-            */
 
             string x = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
               DateTime timeOfCreation = DateTime.Parse(x);

@@ -32,7 +32,6 @@ namespace ForumGUI.Forms
         {
             string newCategoryName = txtBoxCategoryName.Text;
 
-            //txtBoxCategoryName.Text = topic.CategoryName;
             topic.NewCategoryname = newCategoryName;
             if(newCategoryName!=null)
             {

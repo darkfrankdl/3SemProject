@@ -41,7 +41,6 @@ namespace ForumGUI.Forms
         {
             if (listBoxPosts.SelectedIndex >= 0)
             {
-                //getSelectedItem(listBoxPosts.SelectedItem);
             }
             else
             {
@@ -60,7 +59,6 @@ namespace ForumGUI.Forms
 
             if (listBoxComments.SelectedIndex >= 0)
             {
-                //getSelectedItem(listBoxPosts.SelectedItem);
             }
             else
             {
