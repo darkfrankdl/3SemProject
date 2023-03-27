@@ -68,20 +68,9 @@ namespace Webserver__MVC_.Controllers
                 return View();
             }
 
-            //try
-            //{
-            //    apiTopicController.UpdateTopic(topic);
-            //    return RedirectToAction(nameof(Topics));
-            //}
-            //catch
-            //{
-            //    return View();
-            //}
 
         }
 
-
-        //[Route("[controller]/[action]/{CategoryName}")]
         public ActionResult Delete(String CategoryName)
         {
             TopicClient topicToDelete = new();
@@ -95,23 +84,12 @@ namespace Webserver__MVC_.Controllers
             }
             return View(topicToDelete);
 
-            //Topic topicToDelete = new();
-            //foreach (Topic topic in apiTopicController.GetTopic().Value)
-            //{
-            //    if (topic.CategoryName.Equals(CategoryName))
-            //    {
-            //        topicToDelete.Username = topic.Username;
-            //        topicToDelete.CategoryName = CategoryName;
-            //    }
-            //}
-            //return View(topicToDelete);
         }
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //[Route("topic/Delete/{CategoryName}")]
-        public ActionResult Delete(TopicClient topic/*Topic topic*/)
+        public ActionResult Delete(TopicClient topic)
         {
             try
             {
@@ -124,16 +102,6 @@ namespace Webserver__MVC_.Controllers
                 return View();
             }
 
-            //try
-            //{
-            //    apiTopicController.DeleteTopic(topic);
-            //    return RedirectToAction(nameof(Topics));
-            //}
-
-            //catch
-            //{
-            //    return View();
-            //}
 
         }
 

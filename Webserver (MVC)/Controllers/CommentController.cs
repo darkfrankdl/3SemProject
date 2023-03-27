@@ -34,9 +34,6 @@ namespace Webserver__MVC_.Controllers
                 s_tempPostUser = Username;
             }
 
-
-
-            //List<CommentClient> list = _client.Comments().ToList();
             List<CommentClient> list = _client.Comments(TimeOfPost, Username).ToList();
             return View(list);
         }

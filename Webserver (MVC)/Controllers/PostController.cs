@@ -81,16 +81,7 @@ namespace Webserver__MVC_.Controllers
             {
                 return View();
             }
-            //if (post.TimeOfPost == null) //(post.TimeOfPost.ToString().Equals("01-01-0001 00:00:00"))
-            //{
-            //    post.TimeOfPost = tempTimeOfPost;
-            //}
-            //else
-            //{
-            //    tempTimeOfPost = post.TimeOfPost;
-            //    TempData["timeOfPost"] = post.TimeOfPost;
-            //}
-            //return View(post);
+
         }
 
         // GET: PostController/Delete/5
